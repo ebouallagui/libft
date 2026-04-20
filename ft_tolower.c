@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 13:41:39 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 17:32:24 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/20 18:32:42 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/20 18:34:11 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+int	ft_tolower(int c)
 {
-	size_t	i;
-	size_t	len;
+	int	i;
 
-	len = ft_strlen(src);
 	i = 0;
-	if (size == 0)
-		return (len);
-	while (i < (size - 1) && src[i])
+	while (ft_isalpha(c))
 	{
-		dest[i] = src[i];
-		i++;
+		if (c >= 'A' && c <= 'Z')
+			c += 32;
 	}
-	dest[i] = '\0';
-	return (len);
+	return (c);
 }

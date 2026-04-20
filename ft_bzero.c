@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 13:41:39 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 17:32:24 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/20 18:07:01 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/20 18:23:59 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
-	size_t	len;
 
-	len = ft_strlen(src);
 	i = 0;
-	if (size == 0)
-		return (len);
-	while (i < (size - 1) && src[i])
+	while (i < n)
 	{
-		dest[i] = src[i];
+		s[i] = '\0';
 		i++;
 	}
-	dest[i] = '\0';
-	return (len);
 }

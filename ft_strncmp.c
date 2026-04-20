@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 13:41:39 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 17:32:24 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/20 17:33:26 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/20 17:43:53 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
-	size_t	len;
 
-	len = ft_strlen(src);
 	i = 0;
-	if (size == 0)
-		return (len);
-	while (i < (size - 1) && src[i])
-	{
-		dest[i] = src[i];
+	if (n <= 0)
+		return (0);
+	while (i < n - 1 && s1[i] == s2[i])
 		i++;
-	}
-	dest[i] = '\0';
-	return (len);
+	return (s1[i] - s2[i]);
 }
