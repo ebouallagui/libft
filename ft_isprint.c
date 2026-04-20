@@ -6,11 +6,11 @@
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:59:33 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 13:00:48 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/20 15:49:43 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

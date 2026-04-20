@@ -6,11 +6,11 @@
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:56:57 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 12:59:13 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/20 15:47:14 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

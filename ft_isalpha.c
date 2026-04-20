@@ -6,11 +6,11 @@
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:19:20 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 12:37:54 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/20 15:46:56 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);

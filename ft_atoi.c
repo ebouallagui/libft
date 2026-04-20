@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_alnum.c                                         :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:40:53 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 15:46:37 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/20 14:50:08 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/20 15:50:57 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+int	ft_atoi(const char *str)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0'
-			&& c <= '9'))
-		return (1);
-	return (0);
+	int	i;
+	int	res;
+
+	i = 0;
+	while (str(i))
+	{
+		if (str(i) > 10)
+			ft_atoi();
+	}
+	return (res);
 }

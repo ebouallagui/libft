@@ -6,11 +6,11 @@
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:12:50 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 12:18:42 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/20 15:49:36 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 

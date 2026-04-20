@@ -6,11 +6,11 @@
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:38:49 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 12:40:25 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/20 15:47:36 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
