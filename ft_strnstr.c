@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 11:35:55 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 14:18:40 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/21 12:49:22 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/21 14:26:22 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stddef.h>
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	char	ch;
+	size_t	i;
+	size_t	j;
 
-	ch = (char)c;
-	while (*s)
+	i = 0;
+	if (*little == '\0')
+		return ((char *)big);
+	while (big[i] != '\0' && i < len)
 	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
+		j = 0;
+		while (big[i + j] == little[j] && (i + j < len))
+		{
+			if (little[j + 1] == '\0')
+				return ((char *)&big[i]);
+			j++;
+		}
+		i++;
 	}
-	if (*s == ch)
-		return ((char *)s);
 	return (NULL);
 }

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
+/*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 18:07:01 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 14:12:37 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/21 14:01:09 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/21 14:10:19 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
 	unsigned char	*ptr;
@@ -19,7 +19,8 @@ void	ft_bzero(void *s, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		s[i] = '\0';
+		ptr[i] = (unsigned char)c;
 		i++;
 	}
+	return (s);
 }
