@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
+/*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 12:12:50 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 15:49:36 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/21 11:34:16 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/21 11:35:10 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
