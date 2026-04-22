@@ -1,30 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 14:28:49 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 16:34:54 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/21 16:44:37 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/21 20:54:48 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
-{
-	size_t				i;
-	unsigned char		*d;
-	const unsigned char	*s;
 
-	if (!dest && !src)
-		return (NULL);
-	d = (unsigned char *)dest;
-	s = (const unsigned char *)src;
-	i = 0;
-	while (i < n)
-	{
-		d[i] = s[i];
-		i++;
-	}
-	return (dest);
-}
