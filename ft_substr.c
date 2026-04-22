@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 16:44:37 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/22 12:44:56 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/22 14:10:10 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/22 14:43:47 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-include "libft.h"
+#include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	size_t	totalsize;
-	char	*ptr;
+	size_t	strlen;
+	char	*dest;
 
-	if (!nmemb && size > SIZE_MAX / count)
+	if (!s)
 		return (NULL);
-	totalsize = nmemb * size;
-	ptr = malloc(totalsize);
-	if (!ptr)
+	strlen = ft_strlen(s);
+	if (start >= strlen)
+		return (ft_strdup(""));
+	if (len > strlen - start)
+		len = strlen - start;
+	dest = malloc(sizeof(char) * (len + 1));
+	if (!dest)
 		return (NULL);
-	ft_bezero(ptr, totalsize);
-	return (ptr);
+	ft_memcpy(dest, s + start, len);
+	dest[len] = '\0';
+	return (dest);
 }

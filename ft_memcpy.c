@@ -6,9 +6,10 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 14:28:49 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 16:34:54 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/22 13:28:26 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

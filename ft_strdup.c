@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 12:35:42 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/22 12:50:39 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/22 12:51:45 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/22 13:05:23 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+include "libft.h"
 
-#ifndef LIBFT_H
-# define LIBFT_H
+	char *
+	ft_strdup(const char *s)
+{
+	int		len;
+	int		i;
+	char	*dest;
 
-# include <stdlib.h>
-# include <string.h>
-
-
-int ft_atoi(const char *str);
-void ft_bzero(void *s, size_t n);
-void *ft_calloc(size_t nmemb, size_t size);
-int ft_isalnum(int c);
-int ft_isalpha(int c);
-int ft_isascii(int c);
-int ft_isdigit(int c);
-int ft_isprint(int c);
-void *ft_memcpy(void *dest, const void *src, size_t n);
-
-
-#endif
-
+	len = ft_strlen(s);
+	i = 0;
+	dest = (char *)malloc(sizeof(char) * (len + 1));
+	if (dest == NULL)
+		return (NULL);
+	while (s[i])
+	{
+		dest[i] = s[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}

@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 12:35:42 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/22 12:50:39 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/22 13:18:19 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/22 13:26:53 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#ifndef LIBFT_H
-# define LIBFT_H
+void	*ft_memchr(const void *s, int c, size_t n)
+{
+	size_t				i;
+	const unsigned char	*ptr;
 
-# include <stdlib.h>
-# include <string.h>
-
-
-int ft_atoi(const char *str);
-void ft_bzero(void *s, size_t n);
-void *ft_calloc(size_t nmemb, size_t size);
-int ft_isalnum(int c);
-int ft_isalpha(int c);
-int ft_isascii(int c);
-int ft_isdigit(int c);
-int ft_isprint(int c);
-void *ft_memcpy(void *dest, const void *src, size_t n);
-
-
-#endif
-
+	i = 0;
+	ptr = (const unsigned char *)s;
+	while (i < n)
+	{
+		if (ptr[i] == (unsigned char)c)
+			return ((void *)&ptr[i]);
+		i++;
+	}
+	return (NULL);
+}
