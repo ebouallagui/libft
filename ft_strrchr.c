@@ -6,14 +6,13 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 13:27:13 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 14:27:52 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/23 16:57:32 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
 int	ft_strlen(const char *str)
-
 {
 	int	i;
 
@@ -53,17 +52,4 @@ char	*ft_strrchr(const char *s, int c)
 		s++;
 	}
 	return (lastc);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	const char	*s = "hallolzf";
-	int			c;
-	char		*res;
-
-	c = 'l';
-	res = ft_strrchr(s, c);
-	printf("res = %s", res);
 }

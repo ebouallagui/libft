@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 12:35:42 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/23 16:39:27 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/23 14:28:40 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/23 14:45:33 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#ifndef LIBFT_H
-# define LIBFT_H
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
+{
+	size_t	i;
+	char	*arr;
 
-# include <stdlib.h>
-# include <stddef.h>
-# include <unistd.h>
-
-int ft_atoi(const char *str);
-void ft_bzero(void *s, size_t n);
-void *ft_calloc(size_t nmemb, size_t size);
-int ft_isalnum(int c);
-int ft_isalpha(int c);
-int ft_isascii(int c);
-int ft_isdigit(int c);
-int ft_isprint(int c);
-void *ft_memcpy(void *dest, const void *src, size_t n);
-
-
-#endif
-
+	i = 0;
+	if (!s || !f)
+		return (NULL);
+	arr = malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!arr)
+		return (NULL);
+	while (s[i])
+	{
+		arr[i] = f(i, (char)s[i]);
+		i++;
+	}
+	arr[i] = '\0';
+	return (arr);
+}

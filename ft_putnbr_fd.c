@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 12:35:42 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/23 16:39:27 by eboualla         ###   ########.fr       */
+/*   Created: 2026/04/23 16:40:09 by eboualla          #+#    #+#             */
+/*   Updated: 2026/04/23 16:55:09 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <libft.h>
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-# include <stdlib.h>
-# include <stddef.h>
-# include <unistd.h>
-
-int ft_atoi(const char *str);
-void ft_bzero(void *s, size_t n);
-void *ft_calloc(size_t nmemb, size_t size);
-int ft_isalnum(int c);
-int ft_isalpha(int c);
-int ft_isascii(int c);
-int ft_isdigit(int c);
-int ft_isprint(int c);
-void *ft_memcpy(void *dest, const void *src, size_t n);
-
-
-#endif
-
+void	ft_putnbr_fd(int n, int fd)
+{
+	if (!n)
+		return ;
+	if (n == -2147483648)
+	{
+		ft_putstr("-2147483648", fd);
+		return ;
+	}
+	if (nb < 0)
+	{
+		write(fd, '-', 1);
+		n = -n;
+	}
+	if (n >= 10)
+		ft_putnbr_fd(n / 10, fd);
+	c = (n % 10) + '0';
+	write(fd, &c, 1);
+}
