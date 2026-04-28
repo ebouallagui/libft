@@ -6,9 +6,10 @@
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:05:56 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/20 17:45:03 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:37:54 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 size_t	ft_strlcat(char dest, const char *src, size_t size)
 {

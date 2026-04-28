@@ -6,10 +6,9 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 12:49:22 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 14:26:22 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:29:49 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <stddef.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)

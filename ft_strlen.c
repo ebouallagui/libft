@@ -6,9 +6,10 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:34:16 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 11:35:10 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:37:16 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

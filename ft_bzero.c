@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
+/*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 18:07:01 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 14:12:37 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:13:23 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

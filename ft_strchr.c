@@ -6,10 +6,10 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:35:55 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/23 16:56:10 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:42:15 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

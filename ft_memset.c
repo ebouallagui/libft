@@ -6,9 +6,10 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 14:01:09 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/21 14:10:19 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:39:48 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

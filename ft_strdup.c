@@ -6,13 +6,12 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 12:51:45 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/22 13:05:23 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:27:16 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-include "libft.h"
+#include "libft.h"
 
-	char *
-	ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	int		len;
 	int		i;
