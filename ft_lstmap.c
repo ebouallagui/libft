@@ -6,7 +6,7 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 14:19:12 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/29 14:54:52 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 17:25:35 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -19,6 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (!lst || !f || !del)
 		return (NULL);
+	nlist = NULL;
 	while (lst)
 	{
 		ncont = f(lst->content);

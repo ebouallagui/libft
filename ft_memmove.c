@@ -6,7 +6,7 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 16:36:06 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/29 14:15:48 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 17:20:54 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -30,8 +30,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else
 	{
 		i = 0;
-		while (i++ < n)
+		while (i < n)
+		{
 			d[i] = s[i];
+			i++;
+		}
 	}
 	return (dest);
 }

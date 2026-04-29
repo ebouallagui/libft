@@ -6,14 +6,14 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:34:16 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/29 14:52:59 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 17:37:24 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])

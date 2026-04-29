@@ -6,7 +6,7 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:44:03 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/29 14:12:54 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 17:41:03 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -20,7 +20,7 @@ static size_t	ft_countwords(const char *s, char c)
 	count = 0;
 	while (s[i])
 	{
-		if ((s[i] != c) && (s[i - 1] == c || i == 0))
+		if ((s[i] != c) && (i == 0 || (s[i - 1] == c)))
 			count++;
 		i++;
 	}

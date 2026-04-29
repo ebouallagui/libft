@@ -6,7 +6,7 @@
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:33:26 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/28 16:29:33 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 17:41:36 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -16,7 +16,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (n <= 0)
+	if (n == 0)
 		return (0);
 	while (i < n - 1 && s1[i] == s2[i])
 		i++;

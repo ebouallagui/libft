@@ -6,14 +6,12 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 16:06:58 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/23 16:36:52 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 17:36:55 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (!c)
-		return ;
 	write(fd, &c, 1);
 }
