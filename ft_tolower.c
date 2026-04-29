@@ -6,20 +6,14 @@
 /*   By: eboualla <eboualla@student.42vienna.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 18:32:42 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/28 16:36:36 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 14:46:41 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 int	ft_tolower(int c)
 {
-	int	i;
-
-	i = 0;
-	while (ft_isalpha(c))
-	{
-		if (c >= 'A' && c <= 'Z')
-			c += 32;
-	}
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
 	return (c);
 }

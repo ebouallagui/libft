@@ -6,12 +6,12 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:44:03 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/22 18:46:18 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 14:12:54 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-static size_t	count_words(const char *s, char c)
+static size_t	ft_countwords(const char *s, char c)
 {
 	size_t	i;
 	size_t	count;
@@ -27,7 +27,7 @@ static size_t	count_words(const char *s, char c)
 	return (count);
 }
 
-static char	*print_word(const char *s, char c)
+static char	*ft_printword(const char *s, char c)
 {
 	size_t	len;
 	char	*dest;
@@ -42,7 +42,7 @@ static char	*print_word(const char *s, char c)
 	return (dest);
 }
 
-static char	**free_all(char **arr, size_t i)
+static char	**ft_freeall(char **arr, size_t i)
 {
 	while (i-- > 0)
 		free(arr[i]);
@@ -58,7 +58,7 @@ char	**ft_split(const char *s, char c)
 	if (!s)
 		return (NULL);
 	i = 0;
-	arr = malloc(sizeof(*arr) * (count_words(s, c) + 1));
+	arr = malloc(sizeof(*arr) * (ft_countwords(s, c) + 1));
 	if (!arr)
 		return (NULL);
 	while (*s)
@@ -67,9 +67,9 @@ char	**ft_split(const char *s, char c)
 			s++;
 		if (*s)
 		{
-			arr[i] = print_word(s, c);
+			arr[i] = ft_printword(s, c);
 			if (!arr[i++])
-				return (free_all(arr, i - 1));
+				return (ft_freeall(arr, i - 1));
 		}
 		while (*s && *s != c)
 			s++;

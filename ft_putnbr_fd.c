@@ -6,23 +6,25 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 16:40:09 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/23 16:55:09 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 14:43:05 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	char	c;
+
 	if (!n)
 		return ;
 	if (n == -2147483648)
 	{
-		ft_putstr("-2147483648", fd);
+		ft_putstr_fd("-2147483648", fd);
 		return ;
 	}
-	if (nb < 0)
+	if (n < 0)
 	{
-		write(fd, '-', 1);
+		write(fd, "-", 1);
 		n = -n;
 	}
 	if (n >= 10)

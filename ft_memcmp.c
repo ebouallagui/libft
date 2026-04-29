@@ -6,12 +6,12 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 13:38:48 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/22 14:06:07 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 14:16:04 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_memcmp(const void s1, const void s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t				i;
 	const unsigned char	*str1;

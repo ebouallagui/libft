@@ -6,7 +6,7 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 18:07:01 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/28 16:13:23 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/29 14:33:24 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -20,7 +20,7 @@ void	ft_bzero(void *s, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		s[i] = '\0';
+		ptr[i] = '\0';
 		i++;
 	}
 }
