@@ -6,12 +6,12 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 13:39:56 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/28 14:18:55 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/30 14:55:19 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void	ft_delone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)
 		return ;

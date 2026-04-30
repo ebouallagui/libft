@@ -6,7 +6,7 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 16:12:35 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/29 17:15:51 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/04/30 15:09:03 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -21,9 +21,9 @@ static int	ft_isspace(char c)
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	res;
-	int	sign;
+	size_t	i;
+	int		res;
+	int		sign;
 
 	sign = 1;
 	i = 0;
@@ -33,12 +33,12 @@ int	ft_atoi(const char *str)
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-			sign *= -1;
+			sign = -1;
 		i++;
 	}
 	while (ft_isdigit(str[i]))
 	{
-		res = res * 10 - (str[i] - '0');
+		res = res * 10 + (str[i] - '0');
 		i++;
 	}
 	return (res * sign);

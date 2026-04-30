@@ -6,7 +6,7 @@
 #    By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/28 16:50:54 by eboualla          #+#    #+#              #
-#    Updated: 2026/04/29 14:26:32 by eboualla         ###   ########.fr        #
+#    Updated: 2026/04/30 15:12:57 by eboualla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,6 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -f
 
-SRC_DIR = src
 SRCS = ft_atoi.c ft_itoa.c ft_lstnew.c ft_putendl_fd.c \
 	   ft_strlcat.c ft_substr.c ft_bzero.c ft_lstadd_back.c \
 	   ft_lstsize.c ft_putnbr_fd.c ft_strlcpy.c ft_tolower.c \
