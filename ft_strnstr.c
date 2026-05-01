@@ -6,10 +6,10 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 12:49:22 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/28 16:29:49 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/05/01 14:22:35 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -19,10 +19,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	if (*little == '\0')
 		return ((char *)big);
-	while (big[i] != '\0' && i < len)
+	while (i < len && big[i] != '\0')
 	{
 		j = 0;
-		while (big[i + j] == little[j] && (i + j < len))
+		while ((i + j < len) && big[i + j] == little[j])
 		{
 			if (little[j + 1] == '\0')
 				return ((char *)&big[i]);

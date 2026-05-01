@@ -6,10 +6,9 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:19:20 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/28 16:14:14 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/05/01 13:31:19 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {
