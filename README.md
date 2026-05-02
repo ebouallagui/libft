@@ -1,9 +1,8 @@
-# Libft
-
 *This project has been created as part of the 42 curriculum by eboualla.*
 
 ---
-
+# Libft
+---
 ## Description
 
 Libft is a custom C standard library implementation created as part of the 42 school curriculum.  

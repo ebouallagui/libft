@@ -6,7 +6,7 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 12:35:42 by eboualla          #+#    #+#             */
-/*   Updated: 2026/04/29 17:53:24 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/05/02 17:26:35 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char				*ft_itoa(int n);
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstadd_front(t_list **lst, t_list *new);
 void				ft_lstclear(t_list **lst, void (*del)(void *));
-void				ft_delone(t_list *lst, void (*del)(void *));
+void				ft_lstdelone(t_list *lst, void (*del)(void *));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstlast(t_list *lst);
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),

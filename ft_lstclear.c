@@ -6,7 +6,7 @@
 /*   By: eboualla <eboualla@student.42vienna.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 13:54:05 by eboualla          #+#    #+#             */
-/*   Updated: 2026/05/01 15:33:11 by eboualla         ###   ########.fr       */
+/*   Updated: 2026/05/02 17:48:20 by eboualla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -21,8 +21,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	{
 		temp = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		free(*lst);
 		*lst = temp;
 	}
-	*lst == NULL;
+	*lst = NULL;
 }
