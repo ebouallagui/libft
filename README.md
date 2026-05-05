@@ -41,6 +41,8 @@ make re     # fully rebuilds the project
 
 Linux Man Pages: Used to verify the exact behavior and edge cases of original libc functions.
 
+For UB questoins: https://github.com/leske42/Foundations/blob/main/UB/README.md
+
 ### AI Usage
 
 ChatGPT was used as a learning assistant during the development of this project for:
